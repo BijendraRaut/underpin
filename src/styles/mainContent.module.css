@@ -1,4 +1,5 @@
 .mainContent {
+  display: flex;
   flex: 1;
   padding: 20px;
 }
@@ -9,7 +10,7 @@
 }
 
 .vikingHighlight img {
-  width: 20%;
+  width: 50%;
   border: 2px solid #d4af37;
 }
 
