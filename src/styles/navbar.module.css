@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #d4af37;
+}
+
+.leftIcons, .rightIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputBox {
+  padding: 5px 10px;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  background: transparent;
+  color: #d4af37;
+}
+
+.addButton {
+  background: #d4af37;
+  border: none;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo {
+  color: #d4af37;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hamburgerMenu, .arrowIcon {
+  font-size: 20px;
+  color: #d4af37;
+}

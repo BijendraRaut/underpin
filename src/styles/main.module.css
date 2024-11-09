@@ -1,0 +1,86 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('https://s3-alpha-sig.figma.com/img/850e/4153/42a513e4e1c22278a91fcee8c0e476ae?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m3sPgP3ZoFLTVMb64m6jqyZtsukyjN1-kCq-cKwTiAyVmq2g11Rzrfra~EWZeexfJP9ZeOG83JjVdnwZWXw3HNN8565DGdec3vwj7Sq2NlsNuVfWARRvMD4RCSz7BcXJh2B0mK1RtxVUJf2AhZtjmhKZKHYJ5rG2SVLcZ8O02WOe~dq-7VbW3SYr9muTfsCj2acKtJWOFzquRGX8MDdnT9Ai918nPWtnAG3CJ0cVpC-cuq-czJjgil2dHfSIh5hxt6DKNIx61qMJJvYilOhXE1z05ChU5vgNNyjLu1PcWmx94tUySmp5gvgmLZ6wY6ESAX7hnCyTk7kZ3nqb4EUHbA__') no-repeat center center/cover;
+    overflow: hidden;
+  }
+  
+  .mainWrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    .mainWrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mainWrapper {
+      flex-direction: column;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+   */
+
+   .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('https://s3-alpha-sig.figma.com/img/850e/4153/42a513e4e1c22278a91fcee8c0e476ae?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m3sPgP3ZoFLTVMb64m6jqyZtsukyjN1-kCq-cKwTiAyVmq2g11Rzrfra~EWZeexfJP9ZeOG83JjVdnwZWXw3HNN8565DGdec3vwj7Sq2NlsNuVfWARRvMD4RCSz7BcXJh2B0mK1RtxVUJf2AhZtjmhKZKHYJ5rG2SVLcZ8O02WOe~dq-7VbW3SYr9muTfsCj2acKtJWOFzquRGX8MDdnT9Ai918nPWtnAG3CJ0cVpC-cuq-czJjgil2dHfSIh5hxt6DKNIx61qMJJvYilOhXE1z05ChU5vgNNyjLu1PcWmx94tUySmp5gvgmLZ6wY6ESAX7hnCyTk7kZ3nqb4EUHbA__') no-repeat center center/cover;
+    overflow: hidden;
+  }
+  
+  .mainWrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Carousel Styling */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+  
+  .carouselItem {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border: 3px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2c2c2c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .mainWrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carousel {
+      padding: 10px;
+      gap: 10px;
+    }
+  }
+  
