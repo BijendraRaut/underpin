@@ -3,7 +3,8 @@
 export default function VideoGallery() {
   const videos = [
     'https://sagarflorist.com/wp-content/uploads/2024/12/pinterestdownloader.com-1733386079.673412.mp4',
-    'https://sagarflorist.com/wp-content/uploads/2024/12/Snapinsta.app_video_94413532C99C460D4870E2FC1C0E1BB3_video_dashinit.mp4',
+    'https://cdn.shopify.com/videos/c/o/v/81a9db2341244172b3c2308ba2526cfa.mp4',
+    // 'https://sagarflorist.com/wp-content/uploads/2024/12/Snapinsta.app_video_94413532C99C460D4870E2FC1C0E1BB3_video_dashinit.mp4',
     'https://sagarflorist.com/wp-content/uploads/2024/12/1727695906802886-2-1.mp4',
     'https://sagarflorist.com/wp-content/uploads/2024/12/pinterestdownloader.com-1732443239.418494.mp4',
     'https://sagarflorist.com/wp-content/uploads/2024/12/pinterestdownloader.com-1733385988.923723.mp4',
