@@ -1,0 +1,38 @@
+- .gitignore
+- README.md
+- eslint.config.mjs
+- jsconfig.json
+- next.config.mjs
+- package-lock.json
+- package.json
+- postcss.config.mjs
+- project_structure.text
+- public
+  - file.svg
+  - globe.svg
+  - next.svg
+  - vercel.svg
+  - window.svg
+- src
+  - app
+    - components
+      - Footer.jsx
+      - HeroSection.jsx
+      - MembershipPlans.jsx
+      - Navbar.jsx
+      - ProductCategories.jsx
+      - Products.jsx
+      - SpiritualItems.jsx
+      - VideoGallery.jsx
+    - favicon.ico
+    - globals.css
+    - layout.js
+    - page.js
+    - pages
+      - about
+        - page.js
+      - contact
+        - page.js
+      - products
+        - page.js
+- tailwind.config.mjs
