@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gold: '#FFD700',
-        dark: '#2a2a2a',
-        sidebar: '#1b1b1b',
-        icon: '#3a3a3a',
-        slot: '#4b4b4b',
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
     },
   },
