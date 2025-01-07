@@ -1,8 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="bg-green-600 text-white">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
@@ -14,7 +20,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Search Bar */}
+        {/* Search Bar (Hidden on Mobile) */}
         <div className="hidden md:flex flex-1 mx-4">
           <input
             type="text"
@@ -26,55 +32,70 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links (Hidden on Mobile) */}
         <div className="hidden md:flex items-center space-x-6">
-          <a href="/" className="hover:text-gray-200">Home</a>
-          <a href="/about" className="hover:text-gray-200">About</a>
-          <a href="/products" className="hover:text-gray-200">Products</a>
-          <a href="/contact" className="hover:text-gray-200">Contact</a>
+          <a href="/" className="hover:text-gray-200">
+            Home
+          </a>
+          <a href="/about" className="hover:text-gray-200">
+            About
+          </a>
+          <a href="/products" className="hover:text-gray-200">
+            Products
+          </a>
+          <a href="/contact" className="hover:text-gray-200">
+            Contact
+          </a>
         </div>
 
-        {/* Icons Section */}
+        {/* Cart & User Icons */}
         <div className="flex items-center space-x-6">
           {/* Cart Icon */}
-          <a href="/cart" className="relative hover:text-gray-200">
+          <a href="/cart" className="relative hover:text-gray-200 ml-2">
             <svg
+              className="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              width="24"
+              height="24"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
             >
               <path
+                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9V7a2 2 0 114 0v6m-4 0h4"
+                d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
               />
             </svg>
-            {/* Cart Item Count */}
+
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
               3
             </span>
           </a>
 
-          {/* User Icon / Dropdown */}
+          {/* User Icon */}
           <div className="relative group">
             <button className="flex items-center space-x-2 hover:text-gray-200 focus:outline-none">
               <svg
+                className="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                width="24"
+                height="24"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
               >
                 <path
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M5.121 17.804A10.963 10.963 0 0112 16c2.216 0 4.287.642 6.121 1.804M12 16v1m0-1c-1.133 0-2.202.307-3.121.804M8.879 17.804A10.963 10.963 0 015.121 17.804m8.758 0A10.963 10.963 0 0112 17m0 0v1m0 0c1.133 0 2.202-.307 3.121-.804m0-11.196A10.963 10.963 0 0112 7m0 0V6m0 0c1.133 0 2.202-.307 3.121-.804"
+                  d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
                 />
               </svg>
+
               <span>Account</span>
             </button>
             <div className="absolute hidden group-hover:block bg-white text-gray-700 mt-2 rounded-md shadow-lg w-40 right-0">
@@ -90,17 +111,48 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMobileMenu}
+          className="md:hidden focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div className="md:hidden bg-green-700">
-        <div className="flex flex-col space-y-2 py-4 px-6">
-          <a href="/" className="hover:text-gray-200">Home</a>
-          <a href="/about" className="hover:text-gray-200">About</a>
-          <a href="/products" className="hover:text-gray-200">Products</a>
-          <a href="/contact" className="hover:text-gray-200">Contact</a>
+      {/* Mobile Navigation Links */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-green-700">
+          <div className="flex flex-col space-y-2 py-4 px-6">
+            <a href="/" className="hover:text-gray-200">
+              Home
+            </a>
+            <a href="/about" className="hover:text-gray-200">
+              About
+            </a>
+            <a href="/products" className="hover:text-gray-200">
+              Products
+            </a>
+            <a href="/contact" className="hover:text-gray-200">
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }
