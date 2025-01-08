@@ -113,7 +113,7 @@ export default function ExtraSection() {
             </div>
             <div className="p-4 bg-white rounded-md shadow-md">
               <img
-                src="https://www.fnp.com/assets/images/custom/articles/Hub-21-07-2023.jpg"
+                src="https://www.fnp.com/assets/images/custom/articles/hub-28-03-2024.jpg"
                 alt="Article 1"
                 className="rounded-t-md"
               />
@@ -129,7 +129,7 @@ export default function ExtraSection() {
             </div>
             <div className="p-4 bg-white rounded-md shadow-md">
               <img
-                src="/path-to-image.jpg"
+                src="https://www.fnp.com/assets/images/custom/articles/hub-20-03-2024.jpg"
                 alt="Article 1"
                 className="rounded-t-md"
               />
