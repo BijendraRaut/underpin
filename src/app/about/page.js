@@ -9,9 +9,7 @@ export default function AboutPage() {
       <div className="text-lg text-gray-600 space-y-6">
         <p>
           Welcome to the{" "}
-          <span className="text-green-600 font-bold">
-            Divine Essential Shop
-          </span>
+          <span className="text-green-600 font-bold">Daily Essential Shop</span>
           , where beauty and spirituality come together to enrich your life. Our
           mission is to provide you with the freshest flowers and the finest
           spiritual items to brighten your day and enhance your spiritual
@@ -51,9 +49,7 @@ export default function AboutPage() {
         </p>
         <p>
           Thank you for choosing the{" "}
-          <span className="text-green-600 font-bold">
-            Divine Essential Shop
-          </span>
+          <span className="text-green-600 font-bold">Daily Essential Shop</span>
           . We look forward to serving you and being a part of your journey.
         </p>
       </div>

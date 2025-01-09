@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="text-2xl font-bold flex items-center">
           <a href="/" className="hover:text-gray-200">
             {/* <img src="/images/logo.png" alt="Logo" className="h-8 w-8 mr-2" /> */}
-            DIVINE ESSENTIALS
+            Daily EssentialS
           </a>
         </div>
 

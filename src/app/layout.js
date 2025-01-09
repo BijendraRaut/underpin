@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "DIVINE ESSENTIALS",
+  title: "Daily EssentialS",
   description: "Flowers & Bhakti Essentials",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navbar />
+        <Navbar />
         {children}
         <Footer />
       </body>
