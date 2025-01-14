@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Daily EssentialS",
+  title: "Daily Essentials",
   description: "Flowers & Bhakti Essentials",
 };
 
