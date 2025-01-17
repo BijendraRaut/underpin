@@ -331,7 +331,7 @@ export default function ProductCategoryPage() {
             {filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 m-4"
               >
                 <img
                   src={product.image}
