@@ -2,10 +2,10 @@
 
 export default function MembershipPlans() {
   const plans = [
-    { title: '1 Month Plan', price: '$49.99', description: 'Receive fresh flowers every week for a month.' },
-    { title: '3 Month Plan', price: '$139.99', description: 'Receive fresh flowers every week for three months.' },
-    { title: '6 Month Plan', price: '$249.99', description: 'Receive fresh flowers every week for six months.' },
-    { title: '1 Year Plan', price: '$499.99', description: 'Receive fresh flowers every week for a year.' },
+    { title: '1 Month Plan', price: '49.99', description: 'Receive fresh flowers every week for a month.' },
+    { title: '3 Month Plan', price: '139.99', description: 'Receive fresh flowers every week for three months.' },
+    { title: '6 Month Plan', price: '249.99', description: 'Receive fresh flowers every week for six months.' },
+    { title: '1 Year Plan', price: '499.99', description: 'Receive fresh flowers every week for a year.' },
   ];
 
   return (
@@ -17,7 +17,7 @@ export default function MembershipPlans() {
           {plans.map((plan, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
               <h3 className="text-xl font-bold mb-4">{plan.title}</h3>
-              <p className="text-gray-600">{plan.price}</p>
+              <p className="text-gray-600">Rs. {plan.price}</p>
               <p>{plan.description}</p>
               <a
                 href="#"

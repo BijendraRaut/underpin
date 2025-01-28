@@ -14,9 +14,6 @@ export default function HomePage() {
       <ProductCategories />
       <BestSellers />
       <MembershipPlans />
-      <Products />
-      <SpiritualItems />
-      <VideoGallery />
       <Newsletter />
     </div>
   );
