@@ -1,6 +1,6 @@
 ## 🛍️ Project: Divine Essentials – E-commerce for Daily, Floral & Pooja Needs
 
-🔗 Live Demo: [https://divine-essentials.vercel.app](#)
+🔗 Live Demo: [https://divine-essentials.vercel.app]
 
 ### 📜 Description:
 Divine Essentials is a full-featured e-commerce platform tailored to meet everyday needs. It brings together daily consumables like fresh bread and dairy, along with curated flowers and pooja essentials — all in one seamless shopping experience.
