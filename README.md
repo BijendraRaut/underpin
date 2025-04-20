@@ -33,15 +33,16 @@ Divine Essentials is a full-featured e-commerce platform tailored to meet everyd
 ### 🚀 Getting Started:
 Clone and run locally:
 ```bash
-git clone https://github.com/YourUsername/divine-essentials.git
-cd divine-essentials
+git clone https://github.com/BijendraRaut/underpin.git
+cd underpin
 npm install
 npm run dev
 ```
 
-### 🔗 GitHub Repository:
-[View Repository](https://github.com/BijendraRaut/underpin)
+### 🖼️ Screenshots:
+| Homepage | Category Page | Pricing Detail |
+|----------|----------------|----------------|
+| ![](https://daily-essentials.vercel.app/images/home.png) | ![](https://daily-essentials.vercel.app/images/category.png) | ![](https://daily-essentials.vercel.app/images/pricing.png) |
 
----
 
-Let me know if you want me to include badges, contribution guidelines, or deployment instructions as well!
+
