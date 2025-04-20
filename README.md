@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🛍️ Project: Divine Essentials – E-commerce for Daily, Floral & Pooja Needs
 
-## Getting Started
+🔗 Live Demo: [https://divine-essentials.vercel.app](#)
 
-First, run the development server:
+### 📜 Description:
+Divine Essentials is a full-featured e-commerce platform tailored to meet everyday needs. It brings together daily consumables like fresh bread and dairy, along with curated flowers and pooja essentials — all in one seamless shopping experience.
 
+✨ Key Features:
+- 🛒 Category-based product browsing: Bakery, Dairy, Flowers, and Pooja Items
+- 🔍 Search and filter functionality (planned)
+- 📦 Dynamic product detail pages with images, pricing, and descriptions
+- ⚙️ Responsive layout for all screen sizes (mobile-first design)
+- 💾 MongoDB backend for product storage and retrieval
+- 💡 Smart routing for category and product pages using Next.js App Router
+- 🎨 Clean and modern UI with Tailwind CSS
+- 🌐 Fast loading and optimized image usage
+- 🔒 Scalable backend-ready for authentication and cart functionality
+
+### 🧠 What I Learned:
+- Advanced component structuring with Next.js App Router
+- API route handling in Next.js with MongoDB integration
+- Dynamic routing using file-based folder structure ([id], [category])
+- Debounced search, query parameter handling & client-side filtering
+- State management planning with React hooks (Redux coming soon)
+- SEO-friendly layout and code optimization for performance
+
+### 🧰 Tech Stack:
+- Frontend: Next.js (App Router), React, Tailwind CSS
+- Backend: MongoDB, Mongoose, Next.js API Routes
+- Tools: VSCode, Git, Vercel (for deployment)
+
+
+### 🚀 Getting Started:
+Clone and run locally:
 ```bash
+git clone https://github.com/YourUsername/divine-essentials.git
+cd divine-essentials
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔗 GitHub Repository:
+[View Repository](https://github.com/BijendraRaut/underpin)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Let me know if you want me to include badges, contribution guidelines, or deployment instructions as well!
