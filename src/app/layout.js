@@ -1,8 +1,11 @@
+"use client";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { Provider } from "react-redux";
+import store from "@/store/store";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,20 +17,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Daily Essentials",
-  description: "Flowers & Bhakti Essentials",
-};
+// export const metadata = {
+//   title: "Daily Essentials",
+//   description: "Flowers & Bhakti Essentials",
+// };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+      <body>
+        <Provider store={store}>
+          <Navbar />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
