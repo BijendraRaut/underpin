@@ -1,7 +1,12 @@
 "use client";
 
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, clearCart } from "@/store/cartSlice";
+import {
+  removeFromCart,
+  clearCart,
+  incrementQuantity,
+  decrementQuantity,
+} from "@/store/cartSlice";
 
 export default function CartPage() {
   const cart = useSelector((state) => state.cart.items);
@@ -33,9 +38,21 @@ export default function CartPage() {
                   />
                   <div>
                     <p className="text-lg font-medium">{item.name}</p>
-                    <p className="text-sm text-gray-500">
-                      Qty: {item.quantity}
-                    </p>
+                    <div className="flex items-center mt-1">
+                      <button
+                        onClick={() => dispatch(decrementQuantity(item.id))}
+                        className="bg-gray-200 px-2 py-1 rounded text-sm"
+                      >
+                        −
+                      </button>
+                      <span className="px-3 text-sm">{item.quantity}</span>
+                      <button
+                        onClick={() => dispatch(incrementQuantity(item.id))}
+                        className="bg-gray-200 px-2 py-1 rounded text-sm"
+                      >
+                        +
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div className="text-right">
@@ -62,6 +79,12 @@ export default function CartPage() {
               Clear Cart
             </button>
           </div>
+          <a
+            href="/checkout"
+            className="mt-4 inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700"
+          >
+            Proceed to Checkout
+          </a>
         </>
       )}
     </div>
